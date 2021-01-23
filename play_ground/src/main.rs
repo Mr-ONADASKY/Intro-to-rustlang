@@ -1,6 +1,15 @@
+fn take(v: Vec<i32>) {
+    println!("We took v: {}", v[10] + v[100])
+}
+
 fn main() {
-    let t = (1, 'a', false);
-    let f = (2, (1, 'a', false));
-    println!("{} {} {}", t.0, t.1, t.2);
-    println!("{:#?}", f);
+    let mut v = Vec::new();
+
+    for i in 1..1000 {
+        v.push(i)
+    }
+
+    take(v);
+
+    println!("Finished!")
 }
