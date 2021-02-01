@@ -52,7 +52,7 @@ fn main() {
                     let mut buff = msg.clone().into_bytes();
                     buff.resize(MSG_SIZE, 0);
 
-                     .write_all(&buff).map(|_| client).ok()
+                    client.write_all(&buff).map(|_| client).ok()
                 })
                 .collect::<Vec<_>>();
         }
