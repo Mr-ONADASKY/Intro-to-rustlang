@@ -15,6 +15,6 @@ impl Database {
     }
 
     pub fn posts(&self) -> &Vec<Post> {
-        &self.posts()
+        &self.posts
     }
 }
